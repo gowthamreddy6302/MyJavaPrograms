@@ -4,7 +4,8 @@ class Viswasai extends School {
     String studentName;
     boolean condolation;
 
-    Viswasai(String name, double presentDays, double workingDays, double fees, String studentName, boolean condolation) {
+    Viswasai(String name, double presentDays, double workingDays, double fees, String studentName,
+            boolean condolation) {
         super(name, presentDays, workingDays, fees);
         this.studentName = studentName;
     }
@@ -35,7 +36,7 @@ class Viswasai extends School {
         System.out.println("YOUR ATTENDENCE PERCENTAGE : " + calculateAttendence());
         double condolationCharges = 30000;
         if (condolation) {
-            long totalFees =  (long) (calculateannualFee() + condolationCharges);
+            long totalFees = (long) (calculateannualFee() + condolationCharges);
             System.out.println("ANNUAL FEES TO BE PAID : " + totalFees);
         } else {
             System.out.println("ANNUAL FEES TO BE PAID : " + calculateannualFee());
