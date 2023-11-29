@@ -1,3 +1,5 @@
+package JavaPrograms.ArrayPrograms;
+
 import java.util.Scanner;
 
 public class ArrayExample7 {
